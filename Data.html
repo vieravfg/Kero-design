@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light" style="padding-bottom: 0px;">
+    <a class="navbar-brand" href="index.html" style="padding-left: 5px; padding-right: 5px;">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Temperature.html">Competencia</a>
+            <a class="dropdown-item" href="Humidity.html">Número de Boutiques</a>
+            <a class="dropdown-item" href="Cloudiness.html">Condados</a>
+            <a class="dropdown-item" href="Wind_speed.html">Herramientas</a>
+          </div>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Gráficos</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="Data.html">Clientes Potenciales</a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+
+  <div class="container" id="parent" style="
+    padding-left: 15px;
+">
+<div class="row" style="
+    padding-left: 0px;
+">
+    <div>
+    <div class="jumbotron-responsive" id="wide" style="
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+">
+      <h1 class="my-0 font-weight-normal">Clientes Potenciales</h1>
+      
+      <hr class="my-4">
+      <h3> La siguiente tabla muestra una pequeña extracción de informacion de boutiques ubicadas en los distritos más ricos de USA. Con la utilizacion de jupyter notebooks y google APIs se podrá obtener cientos de clientes potenciales con la utilización de coordenadas.</h3> <table class = table border >  <thead>    <tr style="text-align: center;">      <th></th>      <th>Rank</th>      <th>State</th>      <th>County</th>      <th>coordinates</th>      <th>Nombre de Boutique</th>      <th>Dirección</th>      <th>rating</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>1.0</td>      <td>Virginia</td>      <td>Loudoun County</td>      <td>39.0768, -77.6536</td>      <td>Lou Lou Boutiques</td>      <td>9 Loudoun St SW, Leesburg</td>      <td>4.2</td>    </tr>    <tr>      <th>1</th>      <td>2.0</td>      <td>Maryland</td>      <td>Howard County</td>      <td>39.2873, -76.9643</td>      <td>Happy Kids Co. Children\'s Boutique</td>      <td>7520 W Main St Suite 104, Sykesville</td>      <td>0</td>    </tr>    <tr>      <th>2</th>      <td>3.0</td>      <td>Virginia</td>      <td>Fairfax County</td>      <td>38.9085, -77.2405</td>      <td>Ruby\'s Collection</td>      <td>8032 Leesburg Pike, Vienna</td>      <td>3.8</td>    </tr>    <tr>      <th>3</th>      <td>4.0</td>      <td>New Jersey</td>      <td>Hunterdon County</td>      <td>40.5670, -74.9209</td>      <td>Yesterday\'s Treasures: A Boutique Thrift Shop</td>      <td>215 NJ-31, Flemington</td>      <td>4.6</td>    </tr>    <tr>      <th>4</th>      <td>5.0</td>      <td>California</td>      <td>Santa Clara County</td>      <td>37.3337, -121.8907</td>      <td>The Source Zero</td>      <td>60 N San Pedro St Suite #30, San Jose</td>      <td>5</td>    </tr>    <tr>      <th>5</th>      <td>6.0</td>      <td>Virginia</td>      <td>Arlington County</td>      <td>38.8816, -77.0910</td>      <td>South Moon Under</td>      <td>2700 Clarendon Blvd, Arlington</td>      <td>4.1</td>    </tr>    <tr>      <th>6</th>      <td>7.0</td>      <td>Colorado</td>      <td>Douglas County</td>      <td>39.2587, -104.9389</td>      <td>Mod Mountain Boutique</td>      <td>215 Wilcox St, Castle Rock</td>      <td>5</td>    </tr>    <tr>      <th>7</th>      <td>8.0</td>      <td>California</td>      <td>San Mateo County</td>      <td>37.4337, -122.4014</td>      <td>Baciami Ladies Boutique</td>      <td>604 Main St suite b, Half Moon Bay</td>      <td>4.6</td>    </tr>    <tr>      <th>8</th>      <td>9.0</td>      <td>New Jersey</td>      <td>Morris County</td>      <td>40.8336, -74.5463</td>      <td>Melania Fashions</td>      <td>517 NJ-10, Randolph</td>      <td>5</td>    </tr>    <tr>      <th>9</th>      <td>10.0</td>      <td>Tennessee</td>      <td>Williamson County</td>      <td>30.7592, -97.6982</td>      <td>Sweet Elaine Boutique</td>      <td>206 E Ridgewood Rd, Georgetown</td>      <td>0</td>    </tr>    <tr>      <th>10</th>      <td>11.0</td>      <td>New York</td>      <td>Nassau County</td>      <td>40.6546, -73.5594</td>      <td>Mandee</td>      <td>1630 Merrick Rd, Merrick</td>      <td>3.6</td>    </tr>    <tr>      <th>11</th>      <td>12.0</td>      <td>New York</td>      <td>Somerset County</td>      <td>40.5292, -74.6400</td>      <td>LuLi\'s Bridal Boutique</td>      <td>411 US-206, Hillsborough Township</td>      <td>3.8</td>    </tr>    <tr>      <th>12</th>      <td>13.0</td>      <td>California</td>      <td>Marin County</td>      <td>38.0834, -122.7633</td>      <td>Epicenter</td>      <td>11100 CA-1, Point Reyes Station</td>      <td>4</td>    </tr>    <tr>      <th>13</th>      <td>14.0</td>      <td>California</td>      <td>San Francisco County</td>      <td>37.7749, -122.4194</td>      <td>Uko</td>      <td>350 Hayes St, San Francisco</td>      <td>5</td>    </tr>    <tr>      <th>14</th>      <td>15.0</td>      <td>Ohio</td>      <td>Delaware County</td>      <td>39.9078, -75.3879</td>      <td>Pink Cottage Boutique</td>      <td>3 E Baltimore Ave, Media</td>      <td>5</td>    </tr>    <tr>      <th>15</th>      <td>16.0</td>      <td>Georgia</td>      <td>Forsyth County</td>      <td>34.2359, -84.1435</td>      <td>20 Degrees South</td>      <td>205 Pilgrim Mill Rd, Cumming</td>      <td>5</td>    </tr>    <tr>      <th>16</th>      <td>17.0</td>      <td>Maryland</td>      <td>Montgomery County</td>      <td>40.2290, -75.3879</td>      <td>Ps Wedding Boutique</td>      <td>Skippack</td>      <td>0</td>    </tr>    <tr>      <th>17</th>      <td>18.0</td>      <td>Maryland</td>      <td>Calvert County</td>      <td>38.4950, -76.5026</td>      <td>Charity 23 Boutique at Barefoot Wellness</td>      <td>445 Main St, Prince Frederick</td>      <td>0</td>    </tr>    <tr>      <th>18</th>      <td>19.0</td>      <td>Virginia</td>      <td>Prince William County</td>      <td>38.7839, -77.6078</td>      <td>Soma</td>      <td>14005 Promenade Commons St, Gainesville</td>      <td>4.7</td>    </tr>    <tr>      <th>19</th>      <td>20.0</td>      <td>Virginia</td>      <td>Stafford County</td>      <td>38.4335, -77.4243</td>      <td>Special Event Boutique</td>      <td>356 Garrisonville Rd #109, Stafford</td>      <td>5</td>    </tr>    <tr>      <th>20</th>      <td>21.0</td>      <td>New York</td>      <td>Putnam County</td>      <td>33.3070, -83.3789</td>      <td>Maggie Lane</td>      <td>103 S Jefferson Ave, Eatonton</td>      <td>4.8</td>    </tr>    <tr>      <th>21</th>      <td>22.0</td>      <td>Maryland</td>      <td>Anne Arundel County</td>      <td>38.9530, -76.5488</td>      <td>Chico\'s</td>      <td>2488 Solomons Island Rd G-7, Annapolis</td>      <td>3.8</td>    </tr>    <tr>      <th>22</th>      <td>23.0</td>      <td>Maryland</td>      <td>Charles County</td>      <td>38.5222, -77.1025</td>      <td>House Boutique</td>      <td>6 St Marys Ave Suite 100A, La Plata</td>      <td>4.6</td>    </tr>    <tr>      <th>23</th>      <td>24.0</td>      <td>Texas</td>      <td>Rockwall County</td>      <td>32.8722, -96.3652</td>      <td>Maurices</td>      <td>1021 E Interstate 30, Rockwall</td>      <td>4.5</td>    </tr>    <tr>      <th>24</th>      <td>25.0</td>      <td>Massachusetts</td>      <td>Middlesex County</td>      <td>40.4111, -74.3587</td>      <td>Tobson Boutique</td>      <td>178 Sunset Ave, Old Bridge</td>      <td>0</td>    </tr>  </tbody></table>
+    </div>
+     
+  </div></div></div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body></html>
+
